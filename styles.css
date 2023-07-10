@@ -1,0 +1,80 @@
+
+.container {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .form-box {
+    width: 45%,45%;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .form-box h2 {
+    margin-bottom: 10px;
+  }
+  
+  .form-box label {
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  .form-box input,
+  .form-box select {
+    width: 100%;
+    padding: 5px;
+    margin-bottom: 10px;
+  }
+  
+  .form-box button {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .list-box {
+    margin-top: 30px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 20px;
+  }
+  
+  .list-box h2 {
+    margin-bottom: 10px;
+  }
+  body {
+    font-family: Arial, sans-serif;
+  }
+  
+  h1 {
+    text-align: center;
+  }
+  
+  h2 {
+    margin-top: 30px;
+  }
+  
+  form {
+    margin-bottom: 20px;
+  }
+  
+  input, select {
+    margin-bottom: 10px;
+  }
+  
+  #patient-list, #doctor-list {
+    margin-bottom: 30px;
+  }
+
+
+body {
+    background-image: url("19366.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  

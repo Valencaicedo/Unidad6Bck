@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Aplicativo Médico</title>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+  <h1>Aplicativo Médico</h1>
+
+
+  <div class="container">
+    <div class="form-box">
+      <h2>Formulario de Doctores</h2>
+<!-- Formulario de Doctores -->
+      <form id="doctor-form">
+        <label for="nombre-doctor">Nombre:</label>
+        <input type="text" id="nombre-doctor" name="nombre" required>
+
+        <label for="apellido-doctor">Apellido:</label>
+        <input type="text" id="apellido-doctor" name="apellido" required>
+
+        <label for="cedula-doctor">Número de Cédula:</label>
+        <input type="text" id="cedula-doctor" name="cedula" pattern="[0-9]{9}" required>
+
+        <label for="especialidad-doctor">Especialidad:</label>
+        <select id="especialidad-doctor" name="especialidad" required>
+          <option value="">Seleccione una especialidad</option>
+          <option value="Medicina general">Medicina general</option>
+          <option value="Cardiología">Cardiología</option>
+          <option value="Medicina interna">Medicina interna</option>
+          <option value="Dermatología">Dermatología</option>
+          <option value="Rehabilitación física">Rehabilitación física</option>
+          <option value="Psicología">Psicología</option>
+          <option value="Odontología">Odontología</option>
+          <option value="Radiología">Radiología</option>
+        </select>
+
+        <label for="consultorio">Consultorio:</label>
+        <input type="text" id="consultorio" name="consultorio">
+
+        <label for="correo-doctor">Correo de contacto:</label>
+        <input type="email" id="correo-doctor" name="correo" required>
+
+        <button type="submit">Guardar</button>
+      </form>
+    </div>
+
+    <div class="container">
+      <div class="form-box">    
+        <h2>Formulario de Pacientes</h2>
+  <!-- Formulario de Pacientes -->
+        <form id="patient-form">
+          <label for="nombre-paciente">Nombre:</label>
+          <input type="text" id="nombre-paciente" name="nombre" required>
+
+          <label for="apellido-paciente">Apellido:</label>
+          <input type="text" id="apellido-paciente" name="apellido" required>
+
+          <label for="cedula-paciente">Número de Cédula:</label>
+          <input type="text" id="cedula-paciente" name="cedula" pattern="[0-9]{9}" required>
+
+          <label for="edad">Edad:</label>
+          <input type="number" id="edad" name="edad" required>
+
+          <label for="telefono">Teléfono:</label>
+          <input type="tel" id="telefono" name="telefono" required>
+
+          <label for="especialidad-paciente">Especialidad requerida:</label>
+          <select id="especialidad-paciente" name="especialidad" required>
+            <option value="">Seleccione una especialidad</option>
+            <option value="Medicina general">Medicina general</option>
+            <option value="Cardiología">Cardiología</option>
+            <option value="Medicina interna">Medicina interna</option>
+            <option value="Dermatología">Dermatología</option>
+            <option value="Rehabilitación física">Rehabilitación física</option>
+            <option value="Psicología">Psicología</option>
+            <option value="Odontología">Odontología</option>
+            <option value="Radiología">Radiología</option>
+          </select>
+
+          <button type="submit">Guardar</button>
+        </form>
+      </div>
+    </div>      
+    <div class="list-box">
+      <h2>Listado de Pacientes</h2>
+      <div id="patient-list"></div>
+      <button id="patient-reset">Restaurar</button>
+    </div>
+  
+    <div class="list-box">
+      <h2>Listado de Doctores</h2>
+      <div id="doctor-list"></div>
+      <button id="doctor-reset">Restaurar</button>
+    </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
